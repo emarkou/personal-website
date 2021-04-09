@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'Eleventy', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['Tensorflow/Keras', 'PyTorch', 'Python', 'Scala', 'Spark', 'SQL'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,21 +142,20 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello, World! My name is Eleni and I enjoy building machine learning models that make
+              the world a better place. I realised my inclination towards software development
+              around 2008 while I was trying to create custom themes for Myspace!
             </p>
 
             <p>
               Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              <a href="https://grnet.gr/"> a research center</a>, various start-ups including{' '}
+              <a href="https://blendo.co/"> a series A</a> (1st employee!),{' '}
+              <a href="https://www.apple.com/"> a series B</a>, and{' '}
+              <a href="https://www.metis.tech/"> a maritime corporation</a>. My main focus these
+              days is building and deploying to production deep learning models for dynamic pricing
+              as a member of the pricing team at <a href="https://thebeat.co/"> Beat</a>, a
+              ride-hailing app acquired by BMW.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
