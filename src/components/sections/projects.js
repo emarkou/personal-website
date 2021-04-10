@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+// import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
+// import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { srConfig } from '@config';
-import sr from '@utils/sr';
+// import { srConfig } from '@config';
+// import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 
 const StyledProjectsSection = styled.section`
@@ -13,14 +15,6 @@ const StyledProjectsSection = styled.section`
 
   h2 {
     font-size: clamp(24px, 5vw, var(--fz-heading));
-  }
-
-  .archive-link {
-    font-family: var(--font-mono);
-    font-size: var(--fz-sm);
-    &:after {
-      bottom: 0.1em;
-    }
   }
 
   .projects-grid {
@@ -188,14 +182,7 @@ const Projects = () => {
 
   const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
-  const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
-
-  useEffect(() => {
-    sr.reveal(revealTitle.current, srConfig());
-    sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
 
   const GRID_LIMIT = 6;
   const projects = data.projects.edges.filter(({ node }) => node);
@@ -205,10 +192,6 @@ const Projects = () => {
   return (
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
 
       <ul className="projects-grid">
         <TransitionGroup component={null}>
