@@ -1,14 +1,12 @@
 ---
 date: '3'
-title: 'OctoProfile'
+title: 'MTMD Dynamic Scheduling'
 cover: './octoprofile.png'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+external: 'https://dl.acm.org/doi/10.1145/3453933.3454019?fbclid=IwAR21u05kEKVAN2S4BJyorM0BOhdSKoa5DVOFxDJ_SKaxp2QsYcxSalal318'
 tech:
-  - Next.js
-  - Chart.js
-  - GitHub API
+  - Python
+  - Scikit-learn
 showInProjects: true
 ---
 
-A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size.
+A Multiple-tasks on multiple-devices (MTMD) dynamic sceduling for exploiting concurrency in heterogeneous managed runtimes.
