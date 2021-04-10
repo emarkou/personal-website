@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       name: 'Scholar',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://scholar.google.co.uk/citations?hl=en&user=StAoreYAAAAJ',
     },
     {
       name: 'Twitter',
