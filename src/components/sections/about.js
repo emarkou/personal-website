@@ -151,7 +151,7 @@ const About = () => {
               Fast-forward to today, and I've had the privilege of working at{' '}
               <a href="https://grnet.gr/"> a research center</a>, various start-ups including{' '}
               <a href="https://blendo.co/"> a series A</a> (1st employee!),{' '}
-              <a href="https://www.apple.com/"> a series B</a>, and{' '}
+              <a href=" "> a series B</a>, and{' '}
               <a href="https://www.metis.tech/"> a maritime corporation</a>. My main focus these
               days is building and deploying to production deep learning models for dynamic pricing
               as a member of the pricing team at <a href="https://thebeat.co/"> Beat</a>, a
