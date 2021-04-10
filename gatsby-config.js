@@ -5,7 +5,7 @@ module.exports = {
     title: 'Eleni Markou',
     description:
       'Eleni Markou is a senior machine learning and software engineer who specializes in building and deploy ML systems to production.',
-    siteUrl: 'https://XXXX.com', // No trailing slash allowed!
+    siteUrl: 'https://emarkou.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@eamarkou',
   },
