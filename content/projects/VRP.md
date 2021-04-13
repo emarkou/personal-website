@@ -3,6 +3,7 @@ date: '2020-01-10'
 title: 'Vehicle Routing Problem Solvers'
 github: 'https://github.com/emarkou/Large-Scale-Optimization-Vehicle-Routing-Problem'
 # external: 'https://time-to-have-more-fun.now.sh/'
+type: 'GitHub'
 tech:
   - vehicle-routing-problem
   - local-search

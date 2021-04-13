@@ -16,10 +16,10 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/emarkou',
+      url: 'https://twitter.com/eamarkou',
     },
     {
-      name: 'DZone',
+      name: 'Folder',
       url: 'https://dzone.com/users/3084672/elenimarkou.html',
     },
   ],

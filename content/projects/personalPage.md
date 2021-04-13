@@ -2,6 +2,7 @@
 date: '2017-11-01'
 title: 'My personal website repo'
 github: 'https://github.com/emarkou/personal-website'
+type: 'GitHub'
 tech:
   - Node.js
   - Javascript

@@ -170,6 +170,7 @@ const Projects = () => {
             frontmatter {
               title
               tech
+              type
               github
               external
             }
@@ -198,7 +199,7 @@ const Projects = () => {
           {projectsToShow &&
             projectsToShow.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { github, external, title, tech } = frontmatter;
+              const { github, external, type, title, tech } = frontmatter;
 
               return (
                 <CSSTransition
@@ -216,12 +217,12 @@ const Projects = () => {
                       <header>
                         <div className="project-top">
                           <div className="folder">
-                            <Icon name="Folder" />
+                            <Icon name={type} />
                           </div>
                           <div className="project-links">
                             {github && (
                               <a href={github} aria-label="GitHub Link">
-                                <Icon name="GitHub" />
+                                <Icon name="Folder" />
                               </a>
                             )}
                             {external && (

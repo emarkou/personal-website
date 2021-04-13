@@ -2,6 +2,7 @@
 date: '2017-12-01'
 title: 'Redshift Performance Monitoring'
 github: 'https://github.com/emarkou/Redshift-PerformanceMonitoring'
+type: 'GitHub'
 tech:
   - Amazon Redshift
   - AWS
