@@ -1,13 +1,12 @@
 ---
-date: '2017-04-01'
+date: '2017-02-01'
 title: 'Data Scientist'
-company: 'Blendo'
-location: 'Athens, Greece'
-range: 'Feb 2017 - Feb 2019'
+company: 'Blendo.co'
+location: 'Athens, GR'
+range: 'Feb 2017 - Mar 2019'
 url: 'https://www.blendo.co/'
 ---
 
 - Developed a machine learning system for customer segmentation using unsupervised learning
-- Worked on automating analyses and reporting with technology stack centered on Python, SQL and R
-- Carried out adhoc machine learning projects in collaboration with clients’ data science team and blogged on machine
-  learning topics.
+- Worked on automating analyses and reporting with a technology stack centered on Python, SQL, Snowflake, and Redshift
+- Carried out ad-hoc ML projects in collaboration with clients' data science teams and blogged on machine learning topics

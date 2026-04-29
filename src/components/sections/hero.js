@@ -57,9 +57,10 @@ const Hero = () => {
   const three = <h3 className="big-heading">I make machines smarter.</h3>;
   const four = (
     <p>
-      I'm an Athens-based machine learning and software engineer who specializes in developing
-      machine learning models. Currently, I'm an engineer at{' '}
-      <a href="https://thebeat.co//">the Beat</a> focused on dynamic pricing.
+      I'm an Athens-based machine learning engineer who specializes in building production-grade ML
+      systems. Currently, I'm a Senior ML Engineer at{' '}
+      <a href="https://kargo.com/">Kargo</a>, building prediction pipelines for programmatic
+      advertising.
     </p>
   );
   const five = (
