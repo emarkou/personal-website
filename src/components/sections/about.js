@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Tensorflow/Keras', 'PyTorch', 'Python', 'Scala', 'Spark', 'SQL'];
+  const skills = ['Python', 'PyTorch', 'Hugging Face', 'LangGraph', 'vLLM / ONNX', 'Spark', 'MLflow', 'AWS / Kubernetes'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,20 +142,19 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello, World! My name is Eleni and I enjoy building machine learning models that make
-              the world a better place. I realised my inclination towards software development
-              around 2008 while I was trying to create custom themes for Myspace!
+              Hello! My name is Eleni and I'm a Machine Learning Engineer with a track record of
+              building production-grade ML systems across classification, pricing, and recommendation
+              use cases.
             </p>
 
             <p>
-              Fast-forward to today, and I've had the privilege of working at{' '}
-              <a href="https://grnet.gr/"> a research center</a>, various start-ups including{' '}
-              <a href="https://blendo.co/"> a series A</a> (1st employee!),{' '}
-              <a href=" "> a series B</a>, and{' '}
-              <a href="https://www.metis.tech/"> a maritime corporation</a>. My main focus these
-              days is building and deploying to production deep learning models for dynamic pricing
-              as a member of the pricing team at <a href="https://thebeat.co/"> Beat</a>, a
-              ride-hailing app acquired by BMW.
+              I've worked on multilingual classification at scale, led cross-functional ML teams,
+              and deployed real-time models with full observability. I've had the privilege of
+              working at various companies including{' '}
+              <a href="https://kargo.com/">Kargo</a>,{' '}
+              <a href="https://www.captify.co.uk/">Captify</a>, and{' '}
+              <a href="https://free-now.com/">FreeNow</a>. I enjoy solving hard ML problems and
+              collaborating across product, data, and engineering.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
