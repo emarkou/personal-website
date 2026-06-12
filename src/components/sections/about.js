@@ -132,13 +132,13 @@ const About = () => {
 
   const skills = [
     'Python',
-    'PyTorch',
-    'Hugging Face',
-    'LangGraph',
+    'PyTorch / Hugging Face',
+    'RAG & vector search',
+    'LangGraph / agentic systems',
     'vLLM / ONNX',
-    'Spark',
-    'MLflow',
+    'Spark / MLflow',
     'AWS / Kubernetes',
+    'MCP / Claude API',
   ];
 
   return (
@@ -149,19 +149,20 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Eleni and I&apos;m a Machine Learning Engineer with a track record
-              of building production-grade ML systems across classification, pricing, and
-              recommendation use cases.
+              Hello! I&apos;m Eleni — a Machine Learning Engineer specializing in LLM systems, RAG
+              architectures, and production ML at scale. I build things that actually ship:
+              retrieval pipelines over multilingual embeddings, agentic workflows that automate real
+              work, and classifiers that run across millions of data points.
             </p>
 
             <p>
-              I&apos;ve worked on multilingual classification at scale, led cross-functional ML
-              teams, and deployed real-time models with full observability. I&apos;ve had the
-              privilege of working at various companies including{' '}
-              <a href="https://kargo.com/">Kargo</a>,{' '}
-              <a href="https://www.captify.co.uk/">Captify</a>, and{' '}
-              <a href="https://free-now.com/">FreeNow</a>. I enjoy solving hard ML problems and
-              collaborating across product, data, and engineering.
+              I&apos;ve spent the last few years at the intersection of classical ML and the LLM era
+              — architecting RAG-powered classifiers at{' '}
+              <a href="https://www.captify.co.uk/">Captify</a>, prototyping agentic retraining
+              pipelines and internal LLM tooling at <a href="https://kargo.com/">Kargo</a>, and
+              leading distributed ML teams at <a href="https://free-now.com/">FreeNow</a>. I care
+              about making ML systems observable, reproducible, and useful — not just impressive in
+              a notebook.
             </p>
 
             <p>Here are a few technologies I&apos;ve been working with recently:</p>

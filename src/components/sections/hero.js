@@ -54,13 +54,12 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Eleni Markou.</h2>;
-  const three = <h3 className="big-heading">I make machines smarter.</h3>;
+  const three = <h3 className="big-heading">I build ML systems that ship.</h3>;
   const four = (
     <p>
-      I'm an Athens-based machine learning engineer who specializes in building production-grade ML
-      systems. Currently, I'm a Senior ML Engineer at{' '}
-      <a href="https://kargo.com/">Kargo</a>, building prediction pipelines for programmatic
-      advertising.
+      I&apos;m a machine learning engineer specializing in LLM systems, RAG pipelines, and
+      production ML at scale. Currently Senior ML Engineer at <a href="https://kargo.com/">Kargo</a>
+      , building prediction and agentic automation pipelines for programmatic advertising.
     </p>
   );
   const five = (
