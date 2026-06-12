@@ -25,8 +25,8 @@ const StyledHeader = styled.header`
   transition: var(--transition);
 
   ${props =>
-    props.scrollDirection === 'up' &&
-    !props.scrolledToTop &&
+    props.$scrollDirection === 'up' &&
+    !props.$scrolledToTop &&
     css`
       height: var(--nav-scroll-height);
       transform: translateY(0px);
@@ -35,8 +35,8 @@ const StyledHeader = styled.header`
     `};
 
   ${props =>
-    props.scrollDirection === 'down' &&
-    !props.scrolledToTop &&
+    props.$scrollDirection === 'down' &&
+    !props.$scrolledToTop &&
     css`
       height: var(--nav-scroll-height);
       transform: translateY(calc(var(--nav-scroll-height) * -1));
@@ -152,7 +152,7 @@ const Nav = ({ isHome }) => {
   const fadeDownClass = isHome ? 'fadedown' : '';
 
   return (
-    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
+    <StyledHeader $scrollDirection={scrollDirection} $scrolledToTop={scrolledToTop}>
       <StyledNav>
         <TransitionGroup component={null}>
           {isMounted && (
@@ -195,7 +195,8 @@ const Nav = ({ isHome }) => {
                     className="resume-button"
                     href="/resume.pdf"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                  >
                     Resume
                   </a>
                 </div>

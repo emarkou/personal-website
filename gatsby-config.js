@@ -76,7 +76,6 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.slate },
             },
           },
           {
@@ -149,9 +148,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingIds: ['G-45666519-2'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],

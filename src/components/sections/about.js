@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
@@ -118,9 +118,7 @@ const About = () => {
     query {
       avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
+          gatsbyImageData(width: 500, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }
@@ -132,7 +130,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'PyTorch', 'Hugging Face', 'LangGraph', 'vLLM / ONNX', 'Spark', 'MLflow', 'AWS / Kubernetes'];
+  const skills = [
+    'Python',
+    'PyTorch',
+    'Hugging Face',
+    'LangGraph',
+    'vLLM / ONNX',
+    'Spark',
+    'MLflow',
+    'AWS / Kubernetes',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,22 +149,22 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Eleni and I'm a Machine Learning Engineer with a track record of
-              building production-grade ML systems across classification, pricing, and recommendation
-              use cases.
+              Hello! My name is Eleni and I&apos;m a Machine Learning Engineer with a track record
+              of building production-grade ML systems across classification, pricing, and
+              recommendation use cases.
             </p>
 
             <p>
-              I've worked on multilingual classification at scale, led cross-functional ML teams,
-              and deployed real-time models with full observability. I've had the privilege of
-              working at various companies including{' '}
+              I&apos;ve worked on multilingual classification at scale, led cross-functional ML
+              teams, and deployed real-time models with full observability. I&apos;ve had the
+              privilege of working at various companies including{' '}
               <a href="https://kargo.com/">Kargo</a>,{' '}
               <a href="https://www.captify.co.uk/">Captify</a>, and{' '}
               <a href="https://free-now.com/">FreeNow</a>. I enjoy solving hard ML problems and
               collaborating across product, data, and engineering.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Here are a few technologies I&apos;ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -167,7 +174,7 @@ const About = () => {
 
         <StyledPic>
           <div className="wrapper">
-            <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
+            <GatsbyImage image={getImage(data.avatar)} alt="Avatar" className="img" />
           </div>
         </StyledPic>
       </div>

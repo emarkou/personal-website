@@ -52,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     width: 100%;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -232,7 +233,8 @@ const GlobalStyle = createGlobalStyle`
 
   img,
   svg,
-  .gatsby-image-wrapper {
+  .gatsby-image-wrapper,
+  .gatsby-image-wrapper-constrained {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
@@ -416,10 +418,6 @@ const GlobalStyle = createGlobalStyle`
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-  }
-
-  .gatsby-image-outer-wrapper {
-    height: 100%;
   }
 
   ${TransitionStyles};
