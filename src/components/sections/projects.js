@@ -1,5 +1,5 @@
 // import React, { useState, useEffect, useRef } from 'react';
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 // import { Link, useStaticQuery, graphql } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -20,13 +20,13 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
 
-    @media (max-width: 1080px) {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
 
     a {
@@ -181,14 +181,11 @@ const Projects = () => {
     }
   `);
 
-  const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
 
-  const GRID_LIMIT = 6;
   const projects = data.projects.edges.filter(({ node }) => node);
-  const firstSix = projects.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projects : firstSix;
+  const projectsToShow = projects;
 
   return (
     <StyledProjectsSection>
@@ -202,18 +199,11 @@ const Projects = () => {
               const { github, external, type, title, tech } = frontmatter;
 
               return (
-                <CSSTransition
-                  key={i}
-                  classNames="fadeup"
-                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}
-                >
+                <CSSTransition key={i} classNames="fadeup" timeout={300} exit={false}>
                   <StyledProject
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
-                    style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}
+                    style={{ transitionDelay: `${i * 100}ms` }}
                   >
                     <div className="project-inner">
                       <header>
@@ -261,10 +251,6 @@ const Projects = () => {
             })}
         </TransitionGroup>
       </ul>
-
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
     </StyledProjectsSection>
   );
 };
